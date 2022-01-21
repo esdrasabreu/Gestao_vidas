@@ -1,5 +1,4 @@
-# Sistema de gestão de vidas é uma aplicação que utiliza não apenas, mas prioritariamente a tecnologia PHP com banco de 
-dados MySQL. 
+# Sistema de gestão de vidas é uma aplicação que utiliza não apenas, mas prioritariamente a tecnologia PHP com banco de dados MySQL. 
 A aplicação contém:
 1 – Uma tela de login.
 2 – Uma tela de cadastro de usuários.
