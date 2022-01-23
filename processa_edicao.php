@@ -10,7 +10,6 @@ $matricula = $_POST["matricula"];;
 
 $sql = "UPDATE paciente SET nome='$nome', idade='$idade',  telefone ='$telefone', matricula='$matricula' WHERE id_paciente ='$id_paciente'";
 $resultado = mysqli_query($conexao, $sql);
-// $row = mysqli_fetch_assoc($resultado);
 
 if(mysqli_affected_rows($conexao)){
 	$_SESSION['msg'] = "<p style='color:green;'>Usuário editado com sucesso</p>";

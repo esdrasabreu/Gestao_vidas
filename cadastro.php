@@ -20,9 +20,9 @@ session_start();
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-grey">Sistema de Cadastro</h3>
+                    <h3 class="title has-text-grey">Cadastro Usuário</h3>
                     <?php
-                        if($_SESSION["status_cadastro"]):
+                        if(isset($_SESSION["status_cadastro"])):
                     ?>
                     <div class="notification is-success">
                       <p>Cadastro efetuado!</p>
@@ -33,7 +33,7 @@ session_start();
                     unset($_SESSION['status_cadastro']);
                     ?>
                     <?php
-                        if($_SESSION["usuario_existe"]):
+                        if(isset($_SESSION["usuario_existe"])):
                     ?>
                     <div class="notification is-info">
                         <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>

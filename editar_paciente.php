@@ -26,27 +26,6 @@ $row = mysqli_fetch_assoc($result);
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
                     <h3 class="title has-text-grey">Edição de Pacientes</h3>
-                    <?php
-                        if(isset($_SESSION["status_cadastro"])):
-                    ?>
-                    <div class="notification is-success">
-                      <p>Cadastro efetuado!</p>
-                      <p>Faça login informando o seu usuário e senha <a href="login.php">aqui</a></p>
-                    </div>
-                    <?php
-                    endif;
-                    unset($_SESSION['status_cadastro']);
-                    ?>
-                    <?php
-                        if(isset($_SESSION["paciente_existe"])):
-                    ?>
-                    <div class="notification is-info">
-                        <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
-                    </div>
-                    <?php
-                    endif;
-                    unset($_SESSION['paciente_existe']);
-                    ?>
                     <div class="has-text-grey">
                        <a href="pacientes.php">Voltar</a>
                     </div>
